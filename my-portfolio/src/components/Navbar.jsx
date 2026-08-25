@@ -1,0 +1,82 @@
+import Logo from "../assets/logos/LC-logo.png";
+import Github from "../assets/logos/Github.png";
+import LinkedIn from "../assets/logos/LinkedIn.png";
+import Instagram from "../assets/logos/Instagram.png";
+import Email from "../assets/logos/Mail.png";
+
+function NavBar() {
+  return (
+    <nav className="flex pl-10 pr-5 py-5 text-white text-[12px]">
+      <img className="w-[300px]" src={Logo} alt="Lc white logo" />
+      <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
+        <li>
+          <a
+            href="/hero"
+            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
+          >
+            <span>home</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/projects"
+            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+          >
+            <span>projects</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#about"
+            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+          >
+            <span>about</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#skills"
+            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+          >
+            <span>skills</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#resume"
+            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+          >
+            <span>resume</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#contact"
+            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+          >
+            <span>contact</span>
+          </a>
+        </li>
+
+        <li className="inline-flex space-x-3 pt-[12px]">
+          <img className="w-5 h-5" src={Github} href="" alt="Github llink" />
+          <img className="w-5 h-5" src={LinkedIn} href="" alt="LinkedIN link" />
+          <img
+            className="w-5 h-5"
+            src={Instagram}
+            href=""
+            alt="Instagram link"
+          />
+          <img className="w-6 h-5" src={Email} href="" alt="Email Link" />
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default NavBar;
