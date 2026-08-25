@@ -5,6 +5,7 @@ import NavBar from "./Navbar";
 function Hero() {
   return (
     <section
+      id="Hero"
       style={{
         minHeight: "90vh",
         width: "100%",

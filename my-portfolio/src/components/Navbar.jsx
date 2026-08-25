@@ -11,7 +11,7 @@ function NavBar() {
       <ul class="md:px-2 ml-auto mr-5 md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
         <li>
           <a
-            href="/hero"
+            href="#Hero"
             class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
           >
             <span>home</span>
@@ -20,7 +20,7 @@ function NavBar() {
 
         <li>
           <a
-            href="/projects"
+            href="#Projects"
             class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
             <span>projects</span>
@@ -29,7 +29,7 @@ function NavBar() {
 
         <li>
           <a
-            href="#about"
+            href="#About"
             class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
             <span>about</span>
@@ -38,7 +38,7 @@ function NavBar() {
 
         <li>
           <a
-            href="#skills"
+            href="#Skills"
             class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
             <span>skills</span>

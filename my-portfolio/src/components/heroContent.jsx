@@ -24,7 +24,7 @@ function heroContent() {
       </p>
       <div className="flex gap-5 pb-[20px]">
         <button class=" bg-[#B88A46] text-[12px] hover:bg-[#8A8A8A] text-black py-2 px-5 border border-[#B88A46] uppercase rounded">
-          <a href="#projects" className="inline-flex items-center gap-5">
+          <a href="#Projects" className="inline-flex items-center gap-5">
             view my work
             <svg
               class="h-4 w-4"
@@ -43,7 +43,7 @@ function heroContent() {
         </button>
 
         <button class="inline-flex items-center gap-5 text-[12px] hover:bg-[#8A8A8A] text-white py-2 px-10 border border-[#B88A46] uppercase rounded">
-          <a href="#about">about me</a>
+          <a href="#About">about me</a>
         </button>
       </div>
       <p className="text-[#8A8A8A] text-[10px] tracking-[2px] uppercase">

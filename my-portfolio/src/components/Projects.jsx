@@ -4,7 +4,7 @@ import Heathenz from "../assets/images/Heathenz.png";
 
 function Projects() {
   return (
-    <section className="bg-[#0A0A0A] pl-[40px] py-[20px]">
+    <section className="bg-[#0A0A0A] pl-[40px] py-[20px]" id="Projects">
       <div className="project-content">
         <h2 className="font-['Cormorant_Garamond'] text-[20px] font-normal tracking-[2px] text-white leading-none pb-[20px] uppercase">
           featured projects
