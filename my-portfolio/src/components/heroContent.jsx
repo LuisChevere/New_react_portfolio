@@ -7,7 +7,7 @@ import css from "../assets/logos/CSS.png";
 
 function heroContent() {
   return (
-    <div className="hero-content">
+    <div className="pl-[40px] pt-[50px]">
       <p className="text-[#B88A46] text-[10px] tracking-[2px] pb-[20px] uppercase">
         full stack web developer
       </p>
@@ -49,13 +49,13 @@ function heroContent() {
       <p className="text-[#8A8A8A] text-[10px] tracking-[2px] uppercase">
         technologies i use
       </p>
-      <div className="inline-flex gap-12 pt-[20px]">
-        <img className="w-10" src={reactLogo} alt="React Logo" />
-        <img className="w-10" src={Wordpress} alt="Wordpress Logo" />
-        <img className="w-10" src={Woo} alt="Woocommerce Logo" />
-        <img className="w-10" src={JS} alt="Javascript Logo" />
+      <div className="inline-flex gap-8 pt-[20px]">
+        <img className="w-10 h-10" src={reactLogo} alt="React Logo" />
+        <img className="w-10 h-10" src={Wordpress} alt="Wordpress Logo" />
+        <img className="w-10 h-10" src={Woo} alt="Woocommerce Logo" />
+        <img className="w-10 h-10" src={JS} alt="Javascript Logo" />
         <img className="w-20 h-8" src={TW} alt="Tailwind Logo" />
-        <img className="w-10" src={css} alt="CSS Logo" />
+        <img className="w-10 h-10" src={css} alt="CSS Logo" />
       </div>
     </div>
   );

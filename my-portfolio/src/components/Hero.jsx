@@ -1,4 +1,4 @@
-import Background from "../assets/images/Newheadshot.jpg";
+import Background from "../assets/images/newHeadshot.jpg";
 import HeroContent from "./heroContent";
 import NavBar from "./Navbar";
 
@@ -6,11 +6,11 @@ function Hero() {
   return (
     <section
       style={{
-        minHeight: "100vh",
+        minHeight: "90vh",
         width: "100%",
         backgroundImage: `url(${Background})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "40% 20%",
         backgroundRepeat: "no-repeat",
       }}
     >
