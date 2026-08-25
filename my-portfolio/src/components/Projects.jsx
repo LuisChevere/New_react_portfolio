@@ -10,7 +10,7 @@ function Projects() {
           featured projects
         </h2>
 
-        <div className="flex gap-2">
+        <div className="flex justify-center gap-5">
           <div className=" block max-w-70 border border-[#B88A46] rounded-base pb-[15px]">
             <a>
               <img src={LookBook} alt="Lookbook landing" />
