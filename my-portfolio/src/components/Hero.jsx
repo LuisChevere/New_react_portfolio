@@ -1,4 +1,5 @@
 import Background from "../assets/images/headshot.jpg";
+import HeroContent from "./heroContent";
 
 function Hero() {
   return (
@@ -11,7 +12,9 @@ function Hero() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-    ></section>
+    >
+      <HeroContent />
+    </section>
   );
 }
 

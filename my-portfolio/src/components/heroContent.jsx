@@ -1,0 +1,64 @@
+import reactLogo from "../assets/logos/React-logo.png";
+import Wordpress from "../assets/logos/Wordpress-grey.png";
+import Woo from "../assets/logos/woo.png";
+import JS from "../assets/logos/Js.png";
+import TW from "../assets/logos/Tailwind.png";
+import css from "../assets/logos/CSS.png";
+
+function heroContent() {
+  return (
+    <div className="hero-content">
+      <p className="text-[#B88A46] text-[10px] tracking-[2px] pb-[20px] uppercase">
+        full stack web developer
+      </p>
+      <h1 className="font-['Cormorant_Garamond'] text-[60px] font-normal tracking-[2px] text-white leading-none pb-[20px]">
+        I BUILD DIGITAL <br />
+        EXPERIENCES
+      </h1>
+      <p className="text-white text-[12px] font-thin tracking-[2px] pb-[20px] leading-6">
+        Crafting modern high-performance websites and
+        <br />
+        ecommerce solutions that are built with purpose,
+        <br />
+        designed with intention, and made to last.
+      </p>
+      <div className="flex gap-5 pb-[20px]">
+        <button class=" bg-[#B88A46] text-[12px] hover:bg-white text-black py-2 px-5 border border-[#B88A46] uppercase rounded">
+          <a href="#projects" className="inline-flex items-center gap-5">
+            view my work
+            <svg
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </button>
+
+        <button class="inline-flex items-center gap-5 text-[12px] hover:bg-[#8A8A8A] text-white py-2 px-10 border border-[#B88A46] uppercase rounded">
+          about me
+        </button>
+      </div>
+      <p className="text-[#8A8A8A] text-[10px] tracking-[2px] uppercase">
+        technologies i use
+      </p>
+      <div className="inline-flex gap-12 pt-[20px]">
+        <img className="w-10" src={reactLogo} alt="React Logo" />
+        <img className="w-10" src={Wordpress} alt="Wordpress Logo" />
+        <img className="w-10" src={Woo} alt="Woocommerce Logo" />
+        <img className="w-10" src={JS} alt="Javascript Logo" />
+        <img className="w-20 h-8" src={TW} alt="Tailwind Logo" />
+        <img className="w-10" src={css} alt="CSS Logo" />
+      </div>
+    </div>
+  );
+}
+
+export default heroContent;
