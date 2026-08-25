@@ -8,10 +8,10 @@ import css from "../assets/logos/CSS.png";
 function heroContent() {
   return (
     <div className="pl-[40px] pt-[50px]">
-      <p className="text-[#B88A46] text-[10px] tracking-[2px] pb-[20px] uppercase">
+      <p className="text-[#B88A46] text-[10px] tracking-[2px] pb-[15px] uppercase">
         full stack web developer
       </p>
-      <h1 className="font-['Cormorant_Garamond'] text-[60px] font-normal tracking-[2px] text-white leading-none pb-[20px]">
+      <h1 className="font-['Cormorant_Garamond'] text-[70px] font-normal tracking-[2px] text-white leading-none pb-[20px]">
         I BUILD DIGITAL <br />
         EXPERIENCES
       </h1>
