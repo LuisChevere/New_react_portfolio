@@ -1,4 +1,4 @@
-import Background from "../assets/images/headshot.jpg";
+import Background from "../assets/images/Newheadshot.jpg";
 import HeroContent from "./heroContent";
 
 function Hero() {
