@@ -5,6 +5,33 @@ import JS from "../assets/logos/Js.png";
 import TW from "../assets/logos/Tailwind.png";
 import css from "../assets/logos/CSS.png";
 
+const logos = [
+  {
+    title: "React",
+    image: reactLogo,
+  },
+  {
+    title: "Wordpress",
+    image: Wordpress,
+  },
+  {
+    title: "WooCommerce",
+    image: Woo,
+  },
+  {
+    title: "Javascript",
+    image: JS,
+  },
+  {
+    title: "Tailwind",
+    image: TW,
+  },
+  {
+    title: "CSS",
+    image: css,
+  },
+];
+
 function heroContent() {
   return (
     <div className="pl-[40px] pt-[50px]">
@@ -50,12 +77,11 @@ function heroContent() {
         technologies i use
       </p>
       <div className="inline-flex gap-8 pt-[20px]">
-        <img className="w-10 h-10" src={reactLogo} alt="React Logo" />
-        <img className="w-10 h-10" src={Wordpress} alt="Wordpress Logo" />
-        <img className="w-10 h-10" src={Woo} alt="Woocommerce Logo" />
-        <img className="w-10 h-10" src={JS} alt="Javascript Logo" />
-        <img className="w-20 h-8" src={TW} alt="Tailwind Logo" />
-        <img className="w-10 h-10" src={css} alt="CSS Logo" />
+        {logos.map((logo) => (
+          <a key={logo.image}>
+            <img className="w-10 h-10" src={logo.image} alt="React Logo" />
+          </a>
+        ))}
       </div>
     </div>
   );
