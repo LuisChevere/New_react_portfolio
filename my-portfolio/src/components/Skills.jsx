@@ -84,20 +84,3 @@ function Skills() {
 }
 
 export default Skills;
-
-//         <div className="gap-1">
-//           <a className="flex gap-3">
-//             <img className="max-w-10" src={Tools} alt="FrontEnd Logo" />
-//             <h4 className="text-white text-[14px] uppercase pt-[6px] tracking-[2px]">
-//               tools
-//             </h4>
-//           </a>
-//           <div className="text-white">
-//             <ul class="list-disc list-outside pl-5 space-y-2 text-[13px] pt-[15px] pl-[70px] tracking-[1px]">
-//               <li>Git & GitHub</li>
-//               <li>Photoshop</li>
-//               <li>VS Code</li>
-//               <li>Chrome DevTools</li>
-//             </ul>
-//           </div>
-//         </div>
