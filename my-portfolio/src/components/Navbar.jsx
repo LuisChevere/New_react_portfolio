@@ -47,15 +47,6 @@ function NavBar() {
 
         <li>
           <a
-            href="#resume"
-            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
-          >
-            <span>resume</span>
-          </a>
-        </li>
-
-        <li>
-          <a
             href="#contact"
             class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
