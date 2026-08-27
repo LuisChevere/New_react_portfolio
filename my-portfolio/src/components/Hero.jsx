@@ -1,4 +1,4 @@
-import Background from "../assets/images/newHeadshot.jpg";
+import Background from "../assets/images/Newheadshot.jpg";
 import NavBar from "./Navbar";
 import reactLogo from "../assets/logos/React-logo.png";
 import Wordpress from "../assets/logos/Wordpress-grey.png";
