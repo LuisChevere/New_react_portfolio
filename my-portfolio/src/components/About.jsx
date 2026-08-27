@@ -4,7 +4,8 @@ import Resume from "../assets/Docs/ChevereLSoftware.pdf";
 function About() {
   return (
     <section
-      id="Hero"
+      id="About"
+      className="border-y border-[#B88A46]"
       style={{
         minHeight: "50vh",
         width: "100%",
@@ -31,7 +32,7 @@ function About() {
           ideas to life.
         </p>
         <div className="flex gap-5 pb-[20px]">
-          <button class=" text-[12px] hover:bg-[#8A8A8A] text-[#B88A46] py-2 px-5 border border-[#B88A46] uppercase rounded">
+          <button class=" text-[12px] hover:bg-black text-[#B88A46] py-2 px-5 border border-[#B88A46] uppercase rounded">
             <a
               href={Resume}
               download={Resume}

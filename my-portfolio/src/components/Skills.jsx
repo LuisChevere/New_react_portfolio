@@ -68,7 +68,7 @@ function Skills() {
               </h4>
             </a>
 
-            <div className="text-white">
+            <div className="text-white font-thin">
               <ul class="list-disc list-outside pl-5 space-y-2 text-[13px] pt-[15px] pl-[70px] tracking-[1px]">
                 <li>{skill.skill1}</li>
                 <li>{skill.skill2}</li>

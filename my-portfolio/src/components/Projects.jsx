@@ -43,7 +43,7 @@ function Projects() {
                 <img src={project.image} alt="Lookbook landing" />
               </a>
               <div className="pl-[10px] pt-[20px]">
-                <a href="#hero">
+                <a>
                   <h5 class="font-['Cormorant_Garamond'] text-[15px] font-normal tracking-[2px] text-white leading-none pb-[10px] uppercase">
                     {project.title}
                   </h5>
