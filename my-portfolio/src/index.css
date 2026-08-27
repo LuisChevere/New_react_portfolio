@@ -1,17 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
-@media only screen and (min-width: 768px) {
-  .parent:hover .child {
-    opacity: 1;
-    height: auto;
-    overflow: none;
-    transform: translateY(0);
+#pointer {
+  cursor: pointer;
+}
+/* Mobile */
+#mobile-menu-button {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  #nav {
+    flex-direction: column;
   }
-  .child {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transform: translateY(-10%);
+  #nav-links {
+    margin-left: 0px;
+    padding-inline: 0px;
+  }
+
+  #hero-bg {
+    min-height: 60vh !important;
+  }
+
+  #skills {
+    padding-left: 0px;
+    flex-wrap: wrap;
+  }
+
+  #about {
+    padding-left: 40%;
+  }
+
+  #contact {
+    gap: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  #contact-button {
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 14px;
+    padding-left: 10px;
+  }
+
+  #button-text {
+    gap: 0px;
+    padding: 0px;
+  }
+
+  #footer {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-bg {
+    min-height: 70vh !important;
+  }
+  #hero-header {
+    font-size: 55px;
+  }
+
+  #socials {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+  }
+
+  #tech {
+    padding-right: 10%;
+  }
+  #projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills {
+    flex-direction: column;
+    padding-left: 15%;
+  }
+
+  #about {
+    padding-right: 10%;
+    padding-left: 30%;
+    padding-top: 10%;
+  }
+
+  #contact {
+    flex-direction: column;
+    padding-right: 10%;
+    gap: 30px;
+  }
+
+  #nav {
+    position: relative;
+  }
+
+  #mobile-menu-button {
+    display: block;
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  #nav-links {
+    display: none;
+  }
+
+  #nav-links.mobile-menu-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #0a0a0a;
+    z-index: 99;
+  }
+
+  #nav-links li a {
+    padding: 16px 20px;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px !important;
+    gap: 20px;
+  }
+
+  #footer-links {
+    display: flex;
+    padding-left: 20px;
+    justify-content: center;
+    gap: 0 !important;
   }
 }

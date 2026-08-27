@@ -31,12 +31,12 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="bg-[#0A0A0A] px-[40px] py-[40px]" id="Projects">
+    <section className="bg-[#0A0A0A] px-[40px] py-[40px]">
       <div className="project-content">
         <h2 className="font-['Cormorant_Garamond'] text-[20px] font-normal tracking-[2px] text-white leading-none pb-[20px] uppercase">
           featured projects
         </h2>
-        <div className="flex justify-center gap-5">
+        <div className="flex justify-center gap-5" id="projects">
           {projects.map((project) => (
             <div className=" block max-w-70 border border-[#B88A46] rounded-base pb-[15px]">
               <a key={project.image}>

@@ -4,7 +4,6 @@ import Resume from "../assets/Docs/ChevereLSoftware.pdf";
 function About() {
   return (
     <section
-      id="About"
       className="border-y border-[#B88A46]"
       style={{
         minHeight: "50vh",
@@ -15,7 +14,7 @@ function About() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="pl-[50%] pt-[50px]">
+      <div className="pl-[50%] pt-[50px]" id="about">
         <p className="text-[#B88A46] text-[14px] tracking-[2px] pb-[15px] uppercase">
           About Me
         </p>

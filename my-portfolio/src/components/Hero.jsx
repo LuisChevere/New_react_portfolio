@@ -37,7 +37,7 @@ const logos = [
 function Hero() {
   return (
     <section
-      id="Hero"
+      id="hero-bg"
       style={{
         minHeight: "90vh",
         width: "100%",
@@ -48,11 +48,14 @@ function Hero() {
       }}
     >
       <NavBar />
-      <div className="pl-[40px] pt-[50px]">
+      <div id="hero-info" className="pl-[40px] pt-[50px]">
         <p className="text-[#B88A46] text-[10px] tracking-[2px] pb-[15px] uppercase">
           full stack web developer
         </p>
-        <h1 className="font-['Cormorant_Garamond'] text-[70px] font-normal tracking-[2px] text-white leading-none pb-[20px]">
+        <h1
+          className="font-['Cormorant_Garamond'] text-[70px] font-normal tracking-[2px] text-white leading-none pb-[20px]"
+          id="hero-header"
+        >
           I BUILD DIGITAL <br />
           EXPERIENCES
         </h1>
@@ -65,7 +68,7 @@ function Hero() {
         </p>
         <div className="flex gap-5 pb-[20px]">
           <button class=" bg-[#B88A46] text-[12px] hover:bg-black hover:text-[#B88A46] text-black py-2 px-5 border border-[#B88A46] uppercase rounded">
-            <a href="#Projects" className="inline-flex items-center gap-5">
+            <a href="#projects" className="inline-flex items-center gap-5">
               view my work
               <svg
                 class="h-4 w-4"
@@ -84,13 +87,13 @@ function Hero() {
           </button>
 
           <button class="inline-flex items-center gap-5 text-[12px] hover:bg-black hover:text-[#B88A46] text-white py-2 px-10 border border-[#B88A46] uppercase rounded">
-            <a href="#About">about me</a>
+            <a href="#about">about me</a>
           </button>
         </div>
         <p className="text-[#8A8A8A] text-[10px] tracking-[2px] uppercase">
           technologies i use
         </p>
-        <div className="inline-flex gap-8 pt-[20px]">
+        <div className="inline-flex gap-8 pt-[20px]" id="tech">
           {logos.map((logo) => (
             <a key={logo.image}>
               <img className="w-10 h-10" src={logo.image} alt="React Logo" />

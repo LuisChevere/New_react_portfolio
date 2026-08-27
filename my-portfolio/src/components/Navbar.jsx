@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Logo from "../assets/logos/LC-logo.png";
 import Github from "../assets/logos/Github.png";
 import LinkedIn from "../assets/logos/LinkedIn.png";
@@ -26,14 +27,27 @@ const socials = [
 ];
 
 function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="flex pl-10 pr-5 py-5 text-white text-[12px]">
-      <img className="w-[400px]" src={Logo} alt="Lc white logo" />
-      <ul class="md:px-2 ml-auto mr-5 md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
+    <nav className="flex pl-10 pr-5 py-5 text-white text-[12px]" id="nav">
+      <img className="w-[400px]" src={Logo} alt="Lc white logo" id="logo" />
+
+      <button id="mobile-menu-button" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? "×" : "☰"}
+      </button>
+
+      <ul
+        id="nav-links"
+        className={`md:px-2 ml-auto mr-5 md:flex md:space-x-2 absolute md:relative top-full left-0 right-0 ${
+          menuOpen ? "mobile-menu-open" : ""
+        }`}
+      >
         <li>
           <a
-            href="#Hero"
-            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
+            href="#hero"
+            onClick={() => setMenuOpen(false)}
+            className="flex md:inline-flex p-4 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
           >
             <span>home</span>
           </a>
@@ -41,8 +55,9 @@ function NavBar() {
 
         <li>
           <a
-            href="#Projects"
-            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+            href="#projects"
+            onClick={() => setMenuOpen(false)}
+            className="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
             <span>projects</span>
           </a>
@@ -50,8 +65,9 @@ function NavBar() {
 
         <li>
           <a
-            href="#About"
-            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+            href="#about"
+            onClick={() => setMenuOpen(false)}
+            className="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
             <span>about</span>
           </a>
@@ -59,8 +75,9 @@ function NavBar() {
 
         <li>
           <a
-            href="#Skills"
-            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+            href="#skills"
+            onClick={() => setMenuOpen(false)}
+            className="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
             <span>skills</span>
           </a>
@@ -69,14 +86,15 @@ function NavBar() {
         <li>
           <a
             href="#contact"
-            class="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
+            onClick={() => setMenuOpen(false)}
+            className="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
             <span>contact</span>
           </a>
         </li>
       </ul>
 
-      <div className="inline-flex space-x-5 pt-[12px]">
+      <div className="inline-flex space-x-5 pt-[12px]" id="socials">
         {socials.map((social) => (
           <a href={social.link} target="blank">
             <img className="w-5 h-5" src={social.image} />

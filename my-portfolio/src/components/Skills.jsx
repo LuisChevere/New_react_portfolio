@@ -49,16 +49,13 @@ const skills = [
 
 function Skills() {
   return (
-    <section
-      className="bg-[#0A0A0A] pl-[40px] py-[40px] border-t border-[#B88A46]"
-      id="Skills"
-    >
+    <section className="bg-[#0A0A0A] pl-[40px] py-[40px] border-t border-[#B88A46]">
       <div className="project-content">
         <h2 className="font-['Cormorant_Garamond'] text-[20px] font-normal tracking-[2px] text-white leading-none pb-[20px] uppercase">
           development skills
         </h2>
       </div>
-      <div className="flex gap-10 pl-[40px]">
+      <div id="skills" className="flex gap-10 pl-[40px]">
         {skills.map((skill) => (
           <div className="gap-1">
             <a className="flex gap-3" key={skill.image}>

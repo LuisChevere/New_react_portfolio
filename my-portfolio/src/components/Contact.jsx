@@ -7,8 +7,11 @@ function Contact() {
 
   return (
     <section className="bg-[#0A0A0A] px-[50px] pb-[20px]">
-      <div className="bg-[#0A0A0A] pl-[15%] text-white flex gap-50 py-[30px] border-x border-b border-[#B88A46]">
-        <div className="flex gap-10">
+      <div
+        className="bg-[#0A0A0A] pl-[15%] text-white flex gap-50 py-[30px] border-x border-b border-[#B88A46]"
+        id="contact"
+      >
+        <div className="flex gap-10" id="contact">
           <a>
             <img className="w-20" src={Email} />
           </a>
@@ -24,10 +27,11 @@ function Contact() {
 
         <div className="pt-[10px]">
           <button
+            id="contact-button"
             onClick={() => setIsContactOpen(true)}
             class="bg-[#B88A46] text-[14px] hover:bg-black hover:text-[#B88A46] text-black py-3 px-7 border border-[#B88A46] uppercase rounded"
           >
-            <a className="inline-flex items-center gap-5">
+            <a id="button-text" className="inline-flex items-center gap-5">
               Get in touch
               <svg
                 class="h-4 w-4"
