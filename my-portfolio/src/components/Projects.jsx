@@ -1,6 +1,7 @@
 import Atelier from "../assets/images/Atelier.png";
 import LookBook from "../assets/images/Lookbook.png";
 import Heathenz from "../assets/images/Heathenz.png";
+import Portfolio from "../assets/images/Web-dev.jpg";
 
 const projects = [
   {
@@ -24,7 +25,7 @@ const projects = [
   {
     title: "React Web Dev Portfolio",
     description: "React portfolie Website",
-    image: Heathenz, // Update image path
+    image: Portfolio, // Update image path
     link: "https://atelier.luischevere.com/",
   },
 ];
