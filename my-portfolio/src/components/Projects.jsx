@@ -36,7 +36,6 @@ function Projects() {
         <h2 className="font-['Cormorant_Garamond'] text-[20px] font-normal tracking-[2px] text-white leading-none pb-[20px] uppercase">
           featured projects
         </h2>
-
         <div className="flex justify-center gap-5">
           {projects.map((project) => (
             <div className=" block max-w-70 border border-[#B88A46] rounded-base pb-[15px]">
