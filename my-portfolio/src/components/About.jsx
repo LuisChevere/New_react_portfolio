@@ -1,4 +1,5 @@
 import Background from "../assets/images/About-me.jpg";
+import Resume from "../assets/Docs/ChevereLSoftware.pdf";
 
 function About() {
   return (
@@ -31,7 +32,11 @@ function About() {
         </p>
         <div className="flex gap-5 pb-[20px]">
           <button class=" text-[12px] hover:bg-[#8A8A8A] text-[#B88A46] py-2 px-5 border border-[#B88A46] uppercase rounded">
-            <a href="#Projects" className="inline-flex items-center gap-5">
+            <a
+              href={Resume}
+              download={Resume}
+              className="inline-flex items-center gap-5"
+            >
               Download Resume
               <svg
                 class="h-4 w-4"
