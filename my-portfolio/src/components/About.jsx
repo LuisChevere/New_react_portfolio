@@ -22,7 +22,7 @@ function About() {
           Developer. Designer. Creator.
         </h1>
         <p className="text-white text-[12px] font-thin tracking-[2px] pb-[20px] leading-6">
-          I'm a Full Stack Web Developer and technical sewist with a
+          I'm a FrontEnd Web Developer and technical sewist with a
           <br />
           passion for building digital experiences and crafting custom
           <br />

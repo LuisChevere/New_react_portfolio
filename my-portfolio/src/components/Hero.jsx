@@ -50,7 +50,7 @@ function Hero() {
       <NavBar />
       <div id="hero-info" className="pl-[40px] pt-[50px]">
         <p className="text-[#B88A46] text-[10px] tracking-[2px] pb-[15px] uppercase">
-          full stack web developer
+          frontend web developer
         </p>
         <h1
           className="font-['Cormorant_Garamond'] text-[70px] font-normal tracking-[2px] text-white leading-none pb-[20px]"
