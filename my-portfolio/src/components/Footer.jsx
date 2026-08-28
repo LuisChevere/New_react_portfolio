@@ -92,9 +92,6 @@ function Footer() {
             <img className="w-5 h-5" src={social.image} />
           </a>
         ))}
-        <a target="blank">
-          <img className="w-6 h-5" src={Email} />
-        </a>
       </div>
     </footer>
   );
