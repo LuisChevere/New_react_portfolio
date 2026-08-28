@@ -3,7 +3,7 @@ import Logo from "../assets/logos/LC-logo.png";
 import Github from "../assets/logos/Github.png";
 import LinkedIn from "../assets/logos/LinkedIn.png";
 import Instagram from "../assets/logos/Instagram.png";
-import Email from "../assets/logos/Mail.png";
+import ContactModal from "../components/ContactModal";
 
 const socials = [
   {
@@ -28,6 +28,7 @@ const socials = [
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
     <nav className="flex pl-10 pr-5 py-5 text-white text-[12px]" id="nav">
@@ -89,8 +90,12 @@ function NavBar() {
             onClick={() => setMenuOpen(false)}
             className="flex md:inline-flex p-4 items-center hover:text-[#B88A46] uppercase"
           >
-            <span>contact</span>
+            <span onClick={() => setIsContactOpen(true)}>contact</span>
           </a>
+          <ContactModal
+            isOpen={isContactOpen}
+            onClose={() => setIsContactOpen(false)}
+          />
         </li>
       </ul>
 
@@ -100,9 +105,6 @@ function NavBar() {
             <img className="w-5 h-5" src={social.image} />
           </a>
         ))}
-        <a target="blank">
-          <img className="w-6 h-5" src={Email} />
-        </a>
       </div>
     </nav>
   );

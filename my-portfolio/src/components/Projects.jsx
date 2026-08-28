@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "React Web Dev Portfolio",
-    description: "React portfolie Website",
+    description: "React Portfolio Website",
     image: Portfolio, // Update image path
     link: "https://luischevere.com/",
   },

@@ -15,7 +15,7 @@ function Contact() {
           <a>
             <img className="w-20" src={Email} />
           </a>
-          <div>
+          <div id="contact-info">
             <h2 className="font-['Cormorant_Garamond'] text-[25px] font-thin tracking-[2px] text-white leading-none pb-[10px] uppercase">
               Let's Work Together
             </h2>
