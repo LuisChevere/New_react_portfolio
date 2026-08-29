@@ -2,7 +2,6 @@ import Logo from "../assets/logos/LC-white.png";
 import Github from "../assets/logos/Github.png";
 import LinkedIn from "../assets/logos/LinkedIn.png";
 import Instagram from "../assets/logos/Instagram.png";
-import Email from "../assets/logos/Mail.png";
 
 import ContactModal from "../components/ContactModal";
 import { useState } from "react";
@@ -46,6 +45,7 @@ function Footer() {
       <div id="footer-links">
         <a
           href="#hero"
+          id="footer-link"
           className="flex md:inline-flex py-4 px-5 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
         >
           <span>home</span>
@@ -53,6 +53,7 @@ function Footer() {
 
         <a
           href="#projects"
+          id="footer-link"
           className="flex md:inline-flex py-4 px-5 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
         >
           <span>Projects</span>
@@ -60,6 +61,7 @@ function Footer() {
 
         <a
           href="#about"
+          id="footer-link"
           className="flex md:inline-flex py-4 px-5 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
         >
           <span>About</span>
@@ -67,6 +69,7 @@ function Footer() {
 
         <a
           href="#skills"
+          id="footer-link"
           className="flex md:inline-flex py-4 px-5 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
         >
           <span>Skills</span>
@@ -74,6 +77,7 @@ function Footer() {
 
         <a
           id="pointer"
+          id="footer-link"
           onClick={() => setIsContactOpen(true)}
           className="curser-pointer flex md:inline-flex py-4 px-5 items-center hover:text-[#B88A46] active:text-[#B88A46] uppercase"
         >
