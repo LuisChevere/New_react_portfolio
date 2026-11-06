@@ -1,5 +1,3 @@
-Live website
+# React + Vite + TailwindCSS
 
-Luischevere.com
-
-Created with ReactJS, Vite and TailwindCSS
+-Live website [Esencia Restaurant @ The St. Anthony Hotel](luischevere.com)
